@@ -15,13 +15,20 @@ import java.util.Scanner;
 public class testing {
     public static void main(String[] args) throws IOException {
 
-        String path = "/Users/spencer/Desktop";
+        String path = "/Users/spencer/Desktop/Notes";
 
         Scanner scanner = new Scanner( new File(path));
         String text = scanner.useDelimiter("\\A").next();
         scanner.close();
 
         System.out.println(text);
+
+
+        /*
+        for(int j = 0; j < noteList.size(); j++) {
+            System.out.println(noteList.get(j).getText());
+        }
+        */
 
         //read in a file
                 /*
@@ -32,7 +39,21 @@ public class testing {
             System.out.print(" End index: " + uniqueMatch.end() + " ");
             System.out.println(uniqueMatch.group());
         }
+
+         Scanner scanner = new Scanner(new File(path));
+        String text = scanner.useDelimiter("\\A").next();
+        scanner.close();
+        test.setText(text);
+        //System.out.println(test.getText());
+
+
+
+        System.out.println(test.getUniqueID());
+        System.out.println(test.getReferences().get(0));
+        System.out.println(test.getReferences().get(1));
         */
+
+
     }
 
 
